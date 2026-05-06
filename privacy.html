@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Marg</title>
+  <meta name="description" content="Privacy policy for the Marg app." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --parchment: #FAF6F1; --ink: #3D2B1F; --walnut: #6B4C3B;
+      --terracotta: #C17F5A; --sand: #EDE0D4; --muted: #A08878;
+    }
+    body { font-family: 'Nunito', sans-serif; background: var(--parchment); color: var(--ink); line-height: 1.7; }
+
+    nav { background: rgba(250,246,241,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--sand); padding: 0 2rem; height: 64px; display: flex; align-items: center; }
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .nav-logo-icon { width: 36px; height: 36px; background: var(--terracotta); border-radius: 9px; display: flex; align-items: center; justify-content: center; font-size: 18px; }
+    .nav-logo-text { font-size: 20px; font-weight: 800; color: var(--ink); }
+
+    .container { max-width: 720px; margin: 0 auto; padding: 64px 2rem 96px; }
+    .page-label { font-size: 12px; font-weight: 700; color: var(--terracotta); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 12px; }
+    h1 { font-size: 36px; font-weight: 800; color: var(--ink); margin-bottom: 8px; line-height: 1.2; }
+    .updated { font-size: 14px; color: var(--muted); margin-bottom: 48px; }
+
+    .intro { font-size: 17px; color: var(--walnut); line-height: 1.75; margin-bottom: 48px; padding: 24px; background: white; border-radius: 16px; border: 1px solid var(--sand); }
+    .intro strong { color: var(--ink); font-weight: 700; }
+
+    h2 { font-size: 20px; font-weight: 800; color: var(--ink); margin: 40px 0 12px; }
+    p { font-size: 16px; color: var(--walnut); margin-bottom: 16px; }
+    ul { margin: 0 0 16px 20px; }
+    ul li { font-size: 16px; color: var(--walnut); margin-bottom: 8px; }
+
+    .highlight { background: white; border-left: 3px solid var(--terracotta); border-radius: 0 12px 12px 0; padding: 16px 20px; margin: 24px 0; font-size: 15px; color: var(--walnut); }
+
+    hr { border: none; border-top: 1px solid var(--sand); margin: 48px 0; }
+
+    .contact { background: white; border-radius: 16px; border: 1px solid var(--sand); padding: 24px; }
+    .contact p { margin: 0; }
+    a { color: var(--terracotta); }
+
+    footer { border-top: 1px solid var(--sand); padding: 32px 2rem; display: flex; align-items: center; justify-content: space-between; max-width: 720px; margin: 0 auto; }
+    .footer-copy { font-size: 13px; color: var(--muted); }
+    .footer-link { font-size: 13px; color: var(--muted); text-decoration: none; }
+    .footer-link:hover { color: var(--terracotta); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">🐭</div>
+      <span class="nav-logo-text">Marg</span>
+    </a>
+  </nav>
+
+  <div class="container">
+    <p class="page-label">Legal</p>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: May 2025</p>
+
+    <div class="intro">
+      <strong>The short version:</strong> Marg doesn't collect any personal data. Everything you add to the app — quotes, words and books — is stored only on your own device and never leaves your phone.
+    </div>
+
+    <h2>Who we are</h2>
+    <p>Marg is an app made by Margapp, an independent developer project. The app is available on Google Play and is designed as a reading companion for people who want to save quotes and words while they read.</p>
+
+    <h2>What data do we collect?</h2>
+    <p>We don't collect any personal data. Marg has no:</p>
+    <ul>
+      <li>User accounts or login</li>
+      <li>Servers that receive data from your app</li>
+      <li>Analytics or tracking tools</li>
+      <li>Advertising or third-party data collection</li>
+      <li>Access to contacts, calendar, microphone or other sensitive permissions</li>
+    </ul>
+
+    <h2>What is stored on your device?</h2>
+    <p>All content you create in Marg is stored locally on your phone using the device's standard storage mechanism:</p>
+    <ul>
+      <li>Quotes you have saved</li>
+      <li>Words from the Norwegian dictionary you have saved</li>
+      <li>Books you have added to your shelf</li>
+    </ul>
+
+    <div class="highlight">
+      This data never leaves your device unless you choose to export it using the app's export function. You have full control over your data at all times.
+    </div>
+
+    <h2>Camera access</h2>
+    <p>Marg requests access to the camera if you use the scanning feature to photograph book pages. Photos taken are used only for text recognition on the device itself — they are not stored, not sent to any server, and not used for any other purpose.</p>
+
+    <h2>Internet access</h2>
+    <p>The app uses the internet for two things:</p>
+    <ul>
+      <li>Fetching dictionary data from <a href="https://ordbokapi.org" target="_blank">ordbokapi.org</a> (the Norwegian dictionary) when you search for a word</li>
+      <li>Fetching book information from <a href="https://openlibrary.org" target="_blank">Open Library</a> when you scan an ISBN or search for a book</li>
+    </ul>
+    <p>These are publicly available services and receive only the search terms you type. We have no affiliation with them beyond standard API usage.</p>
+
+    <h2>Third-party libraries</h2>
+    <p>Marg uses the following third-party library for on-device text recognition:</p>
+    <ul>
+      <li>Google ML Kit (text recognition) — runs locally on your device, no data is sent to Google</li>
+    </ul>
+
+    <h2>Children</h2>
+    <p>Marg does not collect data from any users, including children. The app is not specifically directed at children under 13.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If we make changes to this privacy policy, the updated version will be published on this page with a new date. Since Marg doesn't collect data, this is unlikely to change significantly.</p>
+
+    <hr />
+
+    <div class="contact">
+      <h2 style="margin-top:0;">Questions?</h2>
+      <p>If you have any questions about privacy in Marg, feel free to get in touch: <a href="mailto:hello@margapp.no">hello@margapp.no</a></p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="footer-copy">© 2025 Margapp</span>
+    <a href="index.html" class="footer-link">← Back to Marg</a>
+  </footer>
+
+</body>
+</html>
