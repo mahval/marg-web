@@ -93,7 +93,7 @@
     .section-eyebrow { font-size: 13px; font-weight: 700; color: var(--terracotta); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 12px; }
     .section-title { font-size: clamp(28px,3.5vw,40px); font-weight: 800; color: var(--ink); margin-bottom: 14px; line-height: 1.2; }
     .section-sub { font-size: 17px; color: var(--walnut); max-width: 520px; margin-bottom: 56px; line-height: 1.7; }
-    .feature-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+    .feature-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 24px; }
     .feature-card { background: var(--warm-white); border-radius: 24px; padding: 32px 28px; border: 1px solid var(--sand); transition: transform 0.25s, box-shadow 0.25s; }
     .feature-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px var(--shadow); }
     .feature-icon { width: 54px; height: 54px; border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 26px; margin-bottom: 20px; }
@@ -140,6 +140,9 @@
     .reveal-delay-2 { transition-delay: 0.2s; }
     .reveal-delay-3 { transition-delay: 0.3s; }
 
+    @media (max-width: 1024px) {
+      .feature-grid { grid-template-columns: repeat(2,1fr); }
+    }
     @media (max-width: 768px) {
       .hero { grid-template-columns: 1fr; text-align: center; padding: 48px 1.5rem 40px; gap: 40px; }
       .hero-sub { margin: 0 auto 36px; }
@@ -233,7 +236,7 @@
               <div class="ui-qm">❝</div>
               <div class="ui-qt">The only way to get rid of a temptation is to yield to it.</div>
               <div class="ui-qa">— Oscar Wilde</div>
-              <div style="margin-top:6px"><span class="ui-tag">wisdom</span></div>
+              <div style="margin-top:6px"><span class="ui-tag">Visdom</span></div>
             </div>
             <div class="ui-slabel">
               <span data-lang="no">Dagens ord</span>
@@ -281,8 +284,8 @@
         <div class="feature-icon w">📚</div>
         <h3 class="feature-title" data-lang="no">Utforsk ord</h3>
         <h3 class="feature-title" data-lang="en">Explore words</h3>
-        <p class="feature-body" data-lang="no">Norsk ordbok innebygd — bokmål og nynorsk. Støter du på et ukjent ord? Marg slår det opp. Lagre det og lær det med flashkort.</p>
-        <p class="feature-body" data-lang="en">Norwegian dictionary built in — Bokmål and Nynorsk. Come across an unfamiliar word? Marg looks it up. Save it and learn it with flashcards.</p>
+        <p class="feature-body" data-lang="no">Norsk ordbok innebygd — bokmål og nynorsk — pluss engelsk. Støter du på et ukjent ord? Marg slår det opp med synonymer og etymologi. Lagre det og lær det med flashkort.</p>
+        <p class="feature-body" data-lang="en">Norwegian dictionary built in — Bokmål and Nynorsk — plus English. Come across an unfamiliar word? Marg looks it up with synonyms and etymology. Save it and learn it with flashcards.</p>
       </div>
       <div class="feature-card reveal reveal-delay-3">
         <div class="feature-icon s">📖</div>
@@ -290,6 +293,13 @@
         <h3 class="feature-title" data-lang="en">Organise by book</h3>
         <p class="feature-body" data-lang="no">Skann ISBN-koden for å legge boken til hyllen. Alt du samler knyttes til boken det kom fra — samlingen din vokser med deg.</p>
         <p class="feature-body" data-lang="en">Scan the ISBN barcode to add a book to your shelf. Everything you collect is linked to where it came from — so your collection grows with you.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-3">
+        <div class="feature-icon q">🎴</div>
+        <h3 class="feature-title" data-lang="no">Del vakre sitat-kort</h3>
+        <h3 class="feature-title" data-lang="en">Share beautiful quote cards</h3>
+        <p class="feature-body" data-lang="no">Generer et elegant sitat-kort direkte fra appen og del det med venner, i bokklubben eller på sosiale medier.</p>
+        <p class="feature-body" data-lang="en">Generate an elegant quote card directly from the app and share it with friends, your book club, or on social media.</p>
       </div>
     </div>
   </section>
