@@ -5,7 +5,7 @@
   aria-label="Marg"
 >
   <g class="label">
-    <text class="handwriting" x="34" y="56">Marg</text>
+    <text class="handwriting" x="76" y="30">Marg</text>
   </g>
   <g class="marg">
     <g class="marg-body">
@@ -27,7 +27,7 @@
       <path class="heart" d="M175 60c-4-6-14-4-12 4 1 5 12 11 12 11s11-6 12-11c2-8-8-10-12-4z" />
     </g>
   </g>
-  <path class="ink arrow" d="M84 66c14 5 21 13 24 24m-11-3 11 4 3-11" />
+  <path class="ink arrow" d="M148 24c18 2 25 18 24 44m-7-9 7 10 7-9" />
   <g class="sparkles ink">
     <path d="M262 62l10-11M270 76l15-2M252 50l3-14" />
   </g>
