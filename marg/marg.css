@@ -399,8 +399,8 @@
   }
 }
 
-/* Two Margs trading margins: they walk in from each side, swap notebooks,
-   and a heart pops up between them. The friend is tinted like in the app. */
+/* Two Margs trading margins: they walk in from each side with their notes.
+   The friend is tinted like in the app. */
 .trade-scene {
   width: min(360px, 86vw);
 }
@@ -417,8 +417,7 @@
   stroke: #8c8d8f;
 }
 .trade-scene .walker,
-.trade-scene .waddle,
-.trade-scene .trade-heart {
+.trade-scene .waddle {
   transform-box: fill-box;
 }
 .trade-scene .walker {
@@ -446,39 +445,13 @@
     transform: translateY(-4px) rotate(4deg);
   }
 }
-.trade-scene .swap-arrow {
-  stroke-dasharray: 80;
-  stroke-dashoffset: 80;
+.trade-scene .notes {
+  fill: none;
+  stroke: #8a7466;
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
-.trade-scene.awake .swap-arrow {
-  stroke-dashoffset: 0;
-  transition: stroke-dashoffset 0.6s ease 1.3s;
-}
-.trade-scene.awake .swap-arrow.later {
-  transition-delay: 1.6s;
-}
-.trade-scene .trade-heart {
-  fill: var(--terracotta);
-  transform-origin: center;
-  transition:
-    transform 0.6s cubic-bezier(0.34, 1.8, 0.64, 1) 2s,
-    opacity 0.3s ease 2s;
-}
-.trade-scene:not(.awake) .trade-heart {
-  opacity: 0;
-  transform: scale(0.3);
-}
-.trade-scene.awake .trade-heart {
-  animation: marg-heart-bob 2.4s ease-in-out 2.8s infinite alternate;
-}
-@keyframes marg-heart-bob {
-  to {
-    transform: translateY(-5px);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .trade-scene .swap-arrow {
-    stroke-dashoffset: 0;
-  }
+.trade-scene .notes.accent {
+  stroke: var(--terracotta);
 }
