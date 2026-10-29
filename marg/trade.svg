@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  class="marg-scene trade-scene shot-scene wakes"
+  viewBox="0 0 360 240"
+  aria-hidden="true"
+>
+  <ellipse cx="112" cy="222" rx="44" ry="7" fill="#3d2b1f" opacity="0.07" />
+  <ellipse cx="248" cy="222" rx="44" ry="7" fill="#3d2b1f" opacity="0.07" />
+
+  <g class="walker from-left">
+    <g class="waddle">
+      <path class="tail" d="M84 186c-26 2-34-18-24-34 5-8-2-15-10-11" />
+      <ellipse class="fur" cx="100" cy="212" rx="12" ry="7" />
+      <ellipse class="fur" cx="126" cy="212" rx="12" ry="7" />
+      <ellipse class="fur" cx="112" cy="176" rx="36" ry="34" />
+      <g class="ear twitchy">
+        <circle class="fur" cx="88" cy="96" r="20" />
+        <circle class="ear-inside" cx="90" cy="98" r="11" />
+      </g>
+      <g class="ear">
+        <circle class="fur" cx="138" cy="94" r="20" />
+        <circle class="ear-inside" cx="136" cy="96" r="11" />
+      </g>
+      <circle class="fur" cx="114" cy="126" r="32" />
+      <circle class="eye" cx="106" cy="126" r="4.6" />
+      <circle class="eye" cx="128" cy="126" r="4.6" />
+      <ellipse class="cheek" cx="96" cy="138" rx="6.5" ry="4" />
+      <ellipse class="cheek" cx="138" cy="138" rx="6.5" ry="4" />
+      <circle class="nose" cx="118" cy="137" r="3.4" />
+      <g class="notebook">
+        <path d="M130 168l20-6 20 6v26l-20-6-20 6z" fill="#c98a6e" />
+        <path d="M133 168l17-4v24l-17 4zM150 164l17 4v24l-17-4z" fill="#fcf4e6" />
+        <path d="M137 173l9-2M137 179l9-2M154 171l9 2M154 177l9 2" stroke="#e0cfb8" stroke-width="1.6" stroke-linecap="round" />
+      </g>
+      <ellipse class="fur" cx="134" cy="182" rx="8" ry="7" />
+    </g>
+  </g>
+
+  <g class="walker from-right">
+    <g class="waddle">
+      <path class="tail friend" d="M276 186c26 2 34-18 24-34-5-8 2-15 10-11" />
+      <ellipse class="fur friend" cx="234" cy="212" rx="12" ry="7" />
+      <ellipse class="fur friend" cx="260" cy="212" rx="12" ry="7" />
+      <ellipse class="fur friend" cx="248" cy="176" rx="36" ry="34" />
+      <g class="ear">
+        <circle class="fur friend" cx="222" cy="94" r="20" />
+        <circle class="ear-inside friend" cx="224" cy="96" r="11" />
+      </g>
+      <g class="ear twitchy">
+        <circle class="fur friend" cx="272" cy="96" r="20" />
+        <circle class="ear-inside friend" cx="270" cy="98" r="11" />
+      </g>
+      <circle class="fur friend" cx="246" cy="126" r="32" />
+      <circle class="eye" cx="232" cy="126" r="4.6" />
+      <circle class="eye" cx="254" cy="126" r="4.6" />
+      <ellipse class="cheek" cx="222" cy="138" rx="6.5" ry="4" />
+      <ellipse class="cheek" cx="264" cy="138" rx="6.5" ry="4" />
+      <circle class="nose friend" cx="242" cy="137" r="3.4" />
+      <g class="notebook">
+        <path d="M190 168l20-6 20 6v26l-20-6-20 6z" fill="#6e7c70" />
+        <path d="M193 168l17-4v24l-17 4zM210 164l17 4v24l-17-4z" fill="#fcf4e6" />
+        <path d="M197 173l9-2M197 179l9-2M214 171l9 2M214 177l9 2" stroke="#e0cfb8" stroke-width="1.6" stroke-linecap="round" />
+      </g>
+      <ellipse class="fur friend" cx="226" cy="182" rx="8" ry="7" />
+    </g>
+  </g>
+
+  <path class="ink swap-arrow" d="M156 62c14-18 34-18 48 0m-10-2 10 2 1-10" />
+  <path class="ink swap-arrow later" d="M204 84c-14 16-34 16-48 0m10 2-10-2-1 10" />
+  <path class="trade-heart" d="M180 30c-4-6-14-4-12 4 1 5 12 11 12 11s11-6 12-11c2-8-8-10-12-4z" />
+</svg>

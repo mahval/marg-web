@@ -398,3 +398,87 @@
     margin: 24px auto 0;
   }
 }
+
+/* Two Margs trading margins: they walk in from each side, swap notebooks,
+   and a heart pops up between them. The friend is tinted like in the app. */
+.trade-scene {
+  width: min(360px, 86vw);
+}
+.trade-scene .fur.friend {
+  fill: #8c8d8f;
+}
+.trade-scene .ear-inside.friend {
+  fill: #92a9bb;
+}
+.trade-scene .nose.friend {
+  fill: #7d97ab;
+}
+.trade-scene .tail.friend {
+  stroke: #8c8d8f;
+}
+.trade-scene .walker,
+.trade-scene .waddle,
+.trade-scene .trade-heart {
+  transform-box: fill-box;
+}
+.trade-scene .walker {
+  transition:
+    transform 1.2s cubic-bezier(0.25, 0.8, 0.35, 1),
+    opacity 0.4s ease;
+}
+.trade-scene:not(.awake) .from-left {
+  opacity: 0;
+  transform: translateX(-80px);
+}
+.trade-scene:not(.awake) .from-right {
+  opacity: 0;
+  transform: translateX(80px);
+}
+.trade-scene.awake .waddle {
+  transform-origin: 50% 100%;
+  animation: marg-waddle 0.3s ease-in-out 4 alternate;
+}
+@keyframes marg-waddle {
+  from {
+    transform: rotate(-4deg);
+  }
+  to {
+    transform: translateY(-4px) rotate(4deg);
+  }
+}
+.trade-scene .swap-arrow {
+  stroke-dasharray: 80;
+  stroke-dashoffset: 80;
+}
+.trade-scene.awake .swap-arrow {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 0.6s ease 1.3s;
+}
+.trade-scene.awake .swap-arrow.later {
+  transition-delay: 1.6s;
+}
+.trade-scene .trade-heart {
+  fill: var(--terracotta);
+  transform-origin: center;
+  transition:
+    transform 0.6s cubic-bezier(0.34, 1.8, 0.64, 1) 2s,
+    opacity 0.3s ease 2s;
+}
+.trade-scene:not(.awake) .trade-heart {
+  opacity: 0;
+  transform: scale(0.3);
+}
+.trade-scene.awake .trade-heart {
+  animation: marg-heart-bob 2.4s ease-in-out 2.8s infinite alternate;
+}
+@keyframes marg-heart-bob {
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .trade-scene .swap-arrow {
+    stroke-dashoffset: 0;
+  }
+}
