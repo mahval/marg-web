@@ -15,9 +15,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="marg/marg.css" />
     <style>
       :root {
         --parchment: #f6e4cc;
@@ -160,6 +161,7 @@
       h1 em {
         font-style: normal;
         color: var(--terracotta);
+        white-space: nowrap;
       }
       .lede {
         font-size: 19px;
@@ -167,34 +169,73 @@
         max-width: 460px;
         margin-bottom: 32px;
       }
+      /* Two stickers stuck in the margin, a little askew. */
+      .hero .stores {
+        margin-top: 32px;
+      }
       .stores {
         display: flex;
         flex-wrap: wrap;
-        gap: 12px;
+        gap: 16px;
+        padding-top: 4px;
       }
       .store {
         display: inline-flex;
-        flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         background: var(--terracotta);
         color: white;
         border-radius: 20px;
-        padding: 12px 24px;
-        font-size: 19px;
+        padding: 12px 24px 13px;
+        font-size: 20px;
         font-weight: 800;
-        line-height: 1.2;
+        line-height: 1.15;
         text-decoration: none;
-        box-shadow: 0 4px 14px var(--card-shadow);
-        transition: transform 0.25s cubic-bezier(0.34, 1.6, 0.64, 1);
+        box-shadow:
+          0 3px 0 rgba(107, 76, 59, 0.25),
+          0 8px 18px var(--card-shadow);
+        transform: rotate(-2.5deg);
+        transition:
+          transform 0.35s cubic-bezier(0.34, 1.8, 0.64, 1),
+          box-shadow 0.35s ease;
       }
+      .store-play {
+        background: var(--walnut);
+        transform: rotate(2deg);
+      }
+      .store-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      html.on-ios .store-play,
+      html.on-android .store-apple {
+        display: none;
+      }
+
       .store:hover,
       .store:focus-visible {
-        transform: translateY(-3px);
+        transform: translateY(-5px) rotate(0deg) scale(1.04);
+        box-shadow:
+          0 5px 0 rgba(107, 76, 59, 0.2),
+          0 14px 24px var(--card-shadow);
+      }
+      .store:active {
+        transform: translateY(0) rotate(0deg) scale(0.96);
+        transition-duration: 0.1s;
       }
       .store small {
-        font-size: 12px;
+        font-size: 13px;
         font-weight: 600;
-        opacity: 0.9;
+        opacity: 0.92;
+      }
+
+      /* ── Meet Marg ─────────────────────────── */
+      .meet-marg {
+        padding: 8px 0 72px;
+        text-align: center;
+      }
+      .meet-marg .lede {
+        margin: 0 auto;
       }
 
       /* ── Features ──────────────────────────── */
@@ -272,10 +313,6 @@
         padding: 48px 0 96px;
         text-align: center;
       }
-      .download .mouse {
-        font-size: 44px;
-        margin-bottom: 12px;
-      }
       .download p {
         font-size: 18px;
         color: var(--walnut);
@@ -296,8 +333,14 @@
       footer .wrap {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         gap: 16px;
         flex-wrap: wrap;
+      }
+      .footer-signature {
+        display: flex;
+        align-items: center;
+        gap: 12px;
       }
       footer a {
         color: var(--walnut);
@@ -329,6 +372,11 @@
           transform: none;
           transition: none;
         }
+        .store,
+        .store:hover,
+        .store:active {
+          transition: none;
+        }
       }
 
       @media (max-width: 760px) {
@@ -347,6 +395,10 @@
         }
         .hero .stores {
           justify-content: center;
+        }
+        .stores {
+          gap: 20px 24px;
+          margin-bottom: 16px;
         }
         .hero .shot {
           justify-self: center;
@@ -396,42 +448,36 @@
           <div>
             <h1>
               <span data-lang="no"
-                >For øyeblikkene som <em>stopper deg midt i boka.</em></span
+                >Ta vare på øyeblikkene <em>mens du leser</em></span
               >
               <span data-lang="en"
-                >For the moments that <em>stop you mid-page.</em></span
+                >Hold on to the moments <em>while you read</em></span
               >
             </h1>
-            <p class="lede" data-lang="no">
-              Marg bor i margen og leser med deg. Han tar vare på sitatene du
-              ikke vil glemme, og slår opp ordene du lurer på, mens papirboka
-              ligger åpen foran deg.
-            </p>
-            <p class="lede" data-lang="en">
-              Marg lives in the margin and reads along with you. He keeps the
-              quotes you don't want to forget and looks up the words you wonder
-              about, while your paper book lies open in front of you.
-            </p>
             <div class="stores">
               <a
-                class="store"
+                class="store store-apple"
                 href="https://apps.apple.com/app/id6822649267"
                 target="_blank"
                 rel="noopener"
               >
-                <small data-lang="no">Last ned fra</small>
-                <small data-lang="en">Download on the</small>
-                App Store
+                <span class="store-text">
+                  <small data-lang="no">Hent Marg i</small>
+                  <small data-lang="en">Get Marg on the</small>
+                  App Store
+                </span>
               </a>
               <a
-                class="store"
+                class="store store-play"
                 href="https://play.google.com/store/apps/details?id=com.margapp.marg"
                 target="_blank"
                 rel="noopener"
               >
-                <small data-lang="no">Last ned fra</small>
-                <small data-lang="en">Get it on</small>
-                Google Play
+                <span class="store-text">
+                  <small data-lang="no">Hent Marg på</small>
+                  <small data-lang="en">Get Marg on</small>
+                  Google Play
+                </span>
               </a>
             </div>
           </div>
@@ -444,6 +490,26 @@
           />
         </div>
       </section>
+
+      <!-- A div, not a section: the feature rows alternate sides by counting sections. -->
+      <div class="meet-marg reveal">
+        <div class="wrap">
+          <div class="marg-spot" data-marg="peek"></div>
+          <h2>
+            <span data-lang="no">Hils på Marg</span>
+            <span data-lang="en">Meet Marg</span>
+          </h2>
+          <p class="lede" data-lang="no">
+            Marg er din personlige lesevenn. Han bor i bokmargen og liker
+            å passe på ting du ønsker å huske fra lesingen.
+          </p>
+          <p class="lede" data-lang="en">
+            Marg is your personal reading companion. He lives in the margin of
+            your book and loves looking after the things you want to remember
+            from your reading.
+          </p>
+        </div>
+      </div>
 
       <section class="feature reveal">
         <div class="wrap">
@@ -466,6 +532,7 @@
               struck you. Marg remembers where in the book you found each quote,
               and draws your journey through it.
             </p>
+            <div class="marg-spot" data-marg="writing"></div>
           </div>
           <img
             class="shot"
@@ -482,8 +549,8 @@
         <div class="wrap">
           <div>
             <p class="eyebrow">
-              <span data-lang="no">Hylla</span
-              ><span data-lang="en">The shelf</span>
+              <span data-lang="no">Samle</span
+              ><span data-lang="en">Collect</span>
             </p>
             <h2>
               <span data-lang="no">Hver bok har sin plass.</span>
@@ -532,6 +599,7 @@
               where the word comes from. Save your favourites and practise them
               with flashcards whenever you like.
             </p>
+            <div class="marg-spot" data-marg="lightbulb"></div>
           </div>
           <img
             class="shot"
@@ -548,13 +616,12 @@
         <div class="wrap">
           <div>
             <p class="eyebrow">
-              <span data-lang="no">Marg</span><span data-lang="en">Marg</span>
+              <span data-lang="no">Se tilbake</span
+              ><span data-lang="en">Look back</span>
             </p>
             <h2>
-              <span data-lang="no"
-                >En liten venn som legger merke til ting.</span
-              >
-              <span data-lang="en">A small friend who notices things.</span>
+              <span data-lang="no">Noe å glede seg over hver dag.</span>
+              <span data-lang="en">Something to smile about every day.</span>
             </h2>
             <p data-lang="no">
               Dagens sitat, dagens ord, og en liten feiring når samlingen din
@@ -611,37 +678,42 @@
 
       <section class="download reveal" id="download">
         <div class="wrap">
-          <div class="mouse" aria-hidden="true">🐭</div>
+          <div class="marg-spot" data-marg="reading"></div>
           <h2>
             <span data-lang="no">Klar for neste lesekveld?</span>
             <span data-lang="en">Ready for your next reading night?</span>
           </h2>
           <p data-lang="no">
-            Marg er gratis, og han gleder seg allerede til å se hva du leser.
+            Marg er gratis, og han gleder seg allerede til å lese sammen med
+            deg.
           </p>
           <p data-lang="en">
-            Marg is free, and he can't wait to see what you're reading.
+            Marg is free, and he can't wait to read along with you.
           </p>
           <div class="stores">
             <a
-              class="store"
+              class="store store-apple"
               href="https://apps.apple.com/app/id6822649267"
               target="_blank"
               rel="noopener"
             >
-              <small data-lang="no">Last ned fra</small>
-              <small data-lang="en">Download on the</small>
-              App Store
+              <span class="store-text">
+                <small data-lang="no">Hent Marg i</small>
+                <small data-lang="en">Get Marg on the</small>
+                App Store
+              </span>
             </a>
             <a
-              class="store"
+              class="store store-play"
               href="https://play.google.com/store/apps/details?id=com.margapp.marg"
               target="_blank"
               rel="noopener"
             >
-              <small data-lang="no">Last ned fra</small>
-              <small data-lang="en">Get it on</small>
-              Google Play
+              <span class="store-text">
+                <small data-lang="no">Hent Marg på</small>
+                <small data-lang="en">Get Marg on</small>
+                Google Play
+              </span>
             </a>
           </div>
         </div>
@@ -650,11 +722,14 @@
 
     <footer>
       <div class="wrap">
-        <span
-          >© 2026 Margapp.
-          <span data-lang="no">Laget med kjærlighet til bøker.</span
-          ><span data-lang="en">Made with love for books.</span></span
-        >
+        <span class="footer-signature">
+          <span class="marg-spot" data-marg="sleeping"></span>
+          <span
+            >© 2026 Margapp.
+            <span data-lang="no">Laget med kjærlighet til bøker.</span
+            ><span data-lang="en">Made with love for books.</span></span
+          >
+        </span>
         <a href="privacy.html"
           ><span data-lang="no">Personvern</span
           ><span data-lang="en">Privacy</span></a
@@ -689,6 +764,15 @@
           setLanguage(savedLanguage);
       } catch (error) {}
 
+      // Marg is iPhone-only, but iPads can install iPhone apps too.
+      const userAgent = navigator.userAgent;
+      const isApple =
+        /iPhone|iPad|iPod/.test(userAgent) ||
+        (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+      if (isApple) document.documentElement.classList.add("on-ios");
+      else if (/Android/.test(userAgent))
+        document.documentElement.classList.add("on-android");
+
       const revealObserver = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
@@ -704,5 +788,6 @@
         .querySelectorAll(".reveal")
         .forEach((element) => revealObserver.observe(element));
     </script>
+    <script src="marg/marg.js"></script>
   </body>
 </html>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  class="marg-scene writing-scene vignette"
+  viewBox="0 0 220 160"
+  aria-hidden="true"
+>
+  <path class="tail" d="M128 86c22-2 30-22 20-38-4-7 3-14 10-10" />
+  <g class="ear twitchy">
+    <circle class="fur" cx="68" cy="44" r="22" />
+    <circle class="ear-inside" cx="70" cy="46" r="12.5" />
+  </g>
+  <g class="ear">
+    <circle class="fur" cx="124" cy="42" r="22" />
+    <circle class="ear-inside" cx="122" cy="44" r="12.5" />
+  </g>
+  <ellipse class="fur" cx="96" cy="78" rx="40" ry="36" />
+  <g class="gaze">
+    <circle class="eye" cx="84" cy="80" r="4.6" />
+    <circle class="eye" cx="108" cy="80" r="4.6" />
+  </g>
+  <ellipse class="cheek" cx="72" cy="91" rx="7" ry="4.2" />
+  <ellipse class="cheek" cx="120" cy="91" rx="7" ry="4.2" />
+  <circle class="nose" cx="96" cy="90" r="3.6" />
+  <path class="page-edge" d="M10 150q100-6 196-2l10 6q-100-3-206 3z" />
+  <path class="page" d="M10 100q100-10 196-3v51q-96-4-196 2z" />
+  <path class="cover" d="M206 97l10 5v52l-10-6z" />
+  <path class="text-line" d="M26 118h90M26 130h110M26 142h70" />
+  <path
+    class="ink margin-heart"
+    d="M154 120c-3-5-11-3-9 3 1 4 9 8 9 8s8-4 9-8c2-6-6-8-9-3z"
+    style="stroke: var(--terracotta)"
+  />
+  <ellipse class="fur" cx="72" cy="100" rx="11" ry="7.5" />
+  <g class="pencil">
+    <g transform="translate(148 126) rotate(35)">
+      <rect x="-4" y="-60" width="8" height="8" rx="2" fill="#e5a08a" />
+      <rect x="-4" y="-53" width="8" height="43" fill="#e8b45a" />
+      <path d="M-4-10h8L0 0z" fill="#f1d3a8" />
+      <path d="M-1.6-4h3.2L0 0z" fill="#3d2b1f" />
+      <ellipse class="fur" cx="0" cy="-24" rx="9" ry="8" />
+    </g>
+  </g>
+</svg>

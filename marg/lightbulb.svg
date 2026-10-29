@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  class="marg-scene lightbulb-scene vignette wakes"
+  viewBox="0 0 220 170"
+  aria-hidden="true"
+>
+  <g class="rays ink">
+    <path d="M100 6V0M80 14l-5-5M120 14l5-5M73 32h-7M127 32h7" />
+  </g>
+  <g class="bulb">
+    <circle class="glass" cx="100" cy="30" r="13" />
+    <path class="ink" d="M87 30a13 13 0 1 1 26 0c0 5-4 8-6 11h-14c-2-3-6-6-6-11zM94 46h12M96 50h8M96 32q4 5 8 0" />
+  </g>
+  <path class="tail" d="M138 124c22 0 30-20 20-36-4-7 3-14 10-10" />
+  <g class="ear twitchy">
+    <circle class="fur" cx="72" cy="80" r="22" />
+    <circle class="ear-inside" cx="74" cy="82" r="12.5" />
+  </g>
+  <g class="ear">
+    <circle class="fur" cx="128" cy="78" r="22" />
+    <circle class="ear-inside" cx="126" cy="80" r="12.5" />
+  </g>
+  <ellipse class="fur" cx="100" cy="114" rx="40" ry="36" />
+  <g class="gaze">
+    <circle class="eye" cx="88" cy="114" r="4.6" />
+    <circle class="eye" cx="112" cy="114" r="4.6" />
+  </g>
+  <ellipse class="cheek" cx="76" cy="127" rx="7" ry="4.2" />
+  <ellipse class="cheek" cx="124" cy="127" rx="7" ry="4.2" />
+  <circle class="nose" cx="100" cy="125" r="3.6" />
+  <path class="page" d="M14 134q90-8 184-2v34q-90-3-184 2z" />
+  <path class="cover" d="M198 132l10 5v33l-10-4z" />
+  <path class="text-line" d="M30 151h54M124 151h52M30 162h70" />
+  <path class="text-line word" d="M94 151h20" />
+  <path class="ink word-circle" d="M90 146c8-7 30-6 32 1s-12 10-20 10-18-3-16-9c1-3 6-5 11-5" />
+  <ellipse class="fur" cx="80" cy="134" rx="11" ry="7.5" />
+  <ellipse class="fur" cx="120" cy="133" rx="11" ry="7.5" />
+</svg>

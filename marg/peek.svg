@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  class="marg-scene peek-scene wakes"
+  viewBox="0 0 340 250"
+  role="img"
+  aria-label="Marg"
+>
+  <g class="label">
+    <text class="handwriting" x="34" y="56">Marg</text>
+  </g>
+  <g class="marg">
+    <g class="marg-body">
+      <path class="tail" d="M222 150c28 0 40-25 28-50-6-12 6-22 16-16" />
+      <g class="ear twitchy">
+        <circle class="fur" cx="130" cy="78" r="30" />
+        <circle class="ear-inside" cx="132" cy="80" r="17" />
+      </g>
+      <g class="ear">
+        <circle class="fur" cx="220" cy="76" r="30" />
+        <circle class="ear-inside" cx="218" cy="78" r="17" />
+      </g>
+      <ellipse class="fur" cx="175" cy="120" rx="52" ry="46" />
+      <circle class="eye" cx="157" cy="122" r="6" />
+      <circle class="eye" cx="193" cy="122" r="6" />
+      <ellipse class="cheek" cx="140" cy="136" rx="9" ry="5.5" />
+      <ellipse class="cheek" cx="210" cy="136" rx="9" ry="5.5" />
+      <circle class="nose" cx="175" cy="135" r="4.5" />
+      <path class="heart" d="M175 60c-4-6-14-4-12 4 1 5 12 11 12 11s11-6 12-11c2-8-8-10-12-4z" />
+    </g>
+  </g>
+  <path class="ink arrow" d="M84 66c14 5 21 13 24 24m-11-3 11 4 3-11" />
+  <g class="sparkles ink">
+    <path d="M262 62l10-11M270 76l15-2M252 50l3-14" />
+  </g>
+  <g class="book">
+    <path class="page-edge" d="M30 238q140-8 270-2l14 8q-140-4-280 6z" />
+    <path class="page" d="M30 150q140-14 270-4v90q-130-6-270 2z" />
+    <path class="cover" d="M300 146l14 7v91l-14-8z" />
+    <path class="text-line" d="M52 172h150M52 186h170M52 200h120M52 214h160M52 228h90" />
+    <path class="ink" d="M272 176c-3-5-11-3-9 3 1 4 9 8 9 8s8-4 9-8c2-6-6-8-9-3zM272 196v2m0 6v2M272 230v-14m0 6c3-3 7-3 8 0m-8 4c-3-3-7-3-8 0" style="stroke-width: 2" />
+  </g>
+  <g class="paws">
+    <ellipse class="fur" cx="152" cy="148" rx="14" ry="9" />
+    <ellipse class="fur" cx="198" cy="147" rx="14" ry="9" />
+  </g>
+</svg>

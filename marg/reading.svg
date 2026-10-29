@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  class="marg-scene reading-scene"
+  viewBox="0 0 220 190"
+  aria-hidden="true"
+>
+  <path class="tail" d="M146 128c26 2 34-20 22-38-5-8 3-16 11-11" />
+  <ellipse class="fur" cx="110" cy="112" rx="44" ry="38" />
+  <g class="ear twitchy">
+    <circle class="fur" cx="80" cy="42" r="22" />
+    <circle class="ear-inside" cx="82" cy="44" r="12.5" />
+  </g>
+  <g class="ear">
+    <circle class="fur" cx="140" cy="40" r="22" />
+    <circle class="ear-inside" cx="138" cy="42" r="12.5" />
+  </g>
+  <circle class="fur" cx="110" cy="70" r="36" />
+  <g class="gaze">
+    <circle class="eye" cx="97" cy="70" r="4.8" />
+    <circle class="eye" cx="123" cy="70" r="4.8" />
+  </g>
+  <ellipse class="cheek" cx="86" cy="80" rx="6.5" ry="4" />
+  <ellipse class="cheek" cx="134" cy="80" rx="6.5" ry="4" />
+  <g class="sparkles ink">
+    <path d="M156 34l8-9M162 46l12-2M148 24l2-11" />
+  </g>
+  <path class="cover" d="M72 88l38 8 38-8v40l-38 8-38-8z" />
+  <path d="M110 96v40" stroke="#5d6a5f" stroke-width="2" />
+  <path class="ink" d="M91 112c0-6 4-9 8-9-1 5-4 8-8 9zm0 0v6" style="stroke: #f3ead9; stroke-width: 2" />
+  <ellipse class="fur" cx="72" cy="110" rx="9" ry="11" />
+  <ellipse class="fur" cx="148" cy="110" rx="9" ry="11" />
+  <rect x="52" y="146" width="116" height="16" rx="4" fill="#6e7c70" />
+  <rect x="58" y="149" width="104" height="10" rx="2" fill="#f3ead9" />
+  <rect x="42" y="162" width="136" height="20" rx="5" fill="#c98a6e" />
+  <rect x="48" y="166" width="124" height="12" rx="2" fill="#f3ead9" />
+</svg>
